@@ -1,0 +1,15 @@
+git --version                               //gives the version of the git that installed in the machine
+git config --global --list                  //provides all the list of users
+git config --global user.name "user_name"   //setting up username for the changes who did
+git config --global user.email "user_email" //setting up the user email for the changes who did
+git init                                    //creates a local git repository with default branch name master
+git init -b root                            //creates a local git repository with mentioned branch name root
+git status                                  //gives the info about the changes untacked in working directory and changes tracking in staging area by git
+git add .                                   //adds all the untracked files into staging area
+git add file_with_path.ext                  //adds specific file to the staging area
+git rm --cached file_with_path.ext          //removes specific file from the staging area
+git commit -m "Commit message"              //commits all the changes that are in the staging area and takes description of changes as a message
+git commit -a -m "Commit message"           //add+commit in a single command
+git log                                     //gives the list of commits
+git log --pretty=onleine                    //gives the list of commits in one line each
+git restore file_with_path.ext              //replace the file with previous version by undoing the changes
