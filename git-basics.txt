@@ -13,5 +13,5 @@ git commit -m "Commit message"              //commits all the changes that are i
 git commit -a -m "Commit message"           //add+commit in a single command
 git log                                     //gives the list of commits
 git log --pretty=oneline                    //gives the list of commits in one line each
-git diff									//provides the differences between un-staged changes and head version
-git diff --staged							//provides the differences between staged changes and head version
+git diff				    //provides the differences between un-staged changes and head version
+git diff --staged			    //provides the differences between staged changes and head version
