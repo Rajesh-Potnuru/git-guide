@@ -4,14 +4,17 @@ git config --global user.name "user_name"   //setting up username for the change
 git config --global user.email "user_email" //setting up the user email for the changes who did
 git init                                    //creates a local git repository with default branch name master
 git init -b root                            //creates a local git repository with mentioned branch name root
+git branch -M new_branch_name		    //changes the old branch name with new branch name
 git status                                  //gives the info about the changes untacked in working directory and changes tracking in staging area by git
 git restore file_with_path.ext              //replace the file with previous version by undoing the changes
 git add .                                   //adds all the untracked files into staging area
 git add file_with_path.ext                  //adds specific file to the staging area
 git rm --cached file_with_path.ext          //removes specific file from the staging area
+git diff				    //provides the differences between un-staged changes and head version
+git diff --staged			    //provides the differences between staged changes and head version
 git commit -m "Commit message"              //commits all the changes that are in the staging area and takes description of changes as a message
 git commit -a -m "Commit message"           //add+commit in a single command
 git log                                     //gives the list of commits
 git log --pretty=oneline                    //gives the list of commits in one line each
-git diff				    //provides the differences between un-staged changes and head version
-git diff --staged			    //provides the differences between staged changes and head version
+git remote add origin remote_url	    //adding remote repo details to origin which will be used for fetching and pushing
+git remote -v				    //provides the details remote repo details to which origin is pointing
