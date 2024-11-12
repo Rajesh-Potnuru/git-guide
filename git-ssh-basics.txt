@@ -1,14 +1,14 @@
-ls -al ~/.ssh						//lists all the availble ssh keys present at that time
-ssh-keygen -o						//generates new ssh key with default algorithm(respond to the prompts accordingly e.g: by clicking enter)
-		//recheck the list of ssh keys after generating, note down the name of the file to use in next step
-clip < ~/.ssh/id_ed25519.pub		//copies the ssh key to the clipboard
-		//open your git repository 
-		//go to settings
-		//navigate to SSH and GPG keys
-		//click on new SSH key
-		//provide the name in title accrodingly e.g: personal_computer
-		//in key area paste the already copied key with help of clip command
-		//click on add SSH key
+ls -al ~/.ssh			//lists all the availble ssh keys present at that time
+ssh-keygen -o			//generates new ssh key with default algorithm(respond to the prompts accordingly e.g: by clicking enter)
+				//recheck the list of ssh keys after generating, note down the name of the file to use in next step
+clip < ~/.ssh/id_ed25519.pub	//copies the ssh key to the clipboard
+				//open your git repository 
+				//go to settings
+				//navigate to SSH and GPG keys
+				//click on new SSH key
+				//provide the name in title accrodingly e.g: personal_computer
+				//in key area paste the already copied key with help of clip command
+				//click on add SSH key
 
 
 //Now we can use the ssh authentication for any of communication between remote and local
