@@ -1,0 +1,7 @@
+git checkout -b feature1			//create and checkout a new branch
+git checkout -B feature1			//create or reset and checkout a branch
+git switch main						//switch to the specified branch
+git switch -c feature2				//create and switch to a new branch
+git branch							//show current branch name
+git branch --all					//list both remote-tracking and local branches
+git branch [-r] (-d | -D) feature2	//-d: delete fully merged branch -D: delete branch (even if not merged)
