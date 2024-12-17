@@ -1,0 +1,7 @@
+Process to convert one existing branch to identical with other existing branch
+git switch release/24.14.100		//first switch to the branch from which we want to get changes
+git pull origin release/24.14.100	//pulls the latest changes from remote
+git switch feature1			//now switch to the branch which we want to make identical
+git reset release/24.14.100 --hard	//this command will forces to make feature1 identical with release/24.14.100
+					//make note all your local un-committed changes also will get deleted
+git push origin feature1 -f		//updates/forces the remote feature1 branch with latest identical changes
