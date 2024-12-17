@@ -12,9 +12,12 @@ git add file_with_path.ext                  //adds specific file to the staging 
 git rm --cached file_with_path.ext          //removes specific file from the staging area
 git diff				    //provides the differences between un-staged changes and head version
 git diff --staged			    //provides the differences between staged changes and head version
+git stash				    //saves all the un-committed working directory
+git stash apply				    //re-applies the saved changes
 git commit -m "Commit message"              //commits all the changes that are in the staging area and takes description of changes as a message
 git commit -a -m "Commit message"           //add+commit in a single command
 git log                                     //gives the list of commits
 git log --pretty=oneline                    //gives the list of commits in one line each
 git remote add origin remote_url	    //adding remote repo details to origin which will be used for fetching and pushing
 git remote -v				    //provides the details remote repo details to which origin is pointing
+git push origin branch_name		    //pushes the new code changes in branch_name to the origin(remote url)
